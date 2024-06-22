@@ -117,8 +117,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.1105307434380443 0.9197179325372248 -0.37669865851166257 0.6176232733425547
-  position -132.03072192330686 54.60519626883157 50.776903983139434
+  orientation -0.1653844418680802 0.6334275194190851 0.7559216652739674 0.6651573784826915
+  position -74.50814971398283 27.165828489968487 14.264214074309583
   near 1
   follow "vehicle"
   followSmoothness 0
@@ -597,20 +597,17 @@ CurvedRoadSegment {
   curvatureRadius 40.5
 }
 BmwX5 {
-  hidden translation_1 0 0 0
-  hidden rotation_1 -7.806354207123089e-10 0.9999901938421999 0.004428568554253429 3.526258339345231e-07
-  hidden translation_2 0 0 0
-  hidden rotation_2 -7.278577261930053e-10 -0.9999903674106035 -0.0043892010669893365 3.31864617039563e-07
-  hidden translation_3 0 0 0
+  hidden rotation_1 -7.806354207123087e-10 0.9999901938421996 0.004428568554253427 3.526258339345231e-07
+  hidden rotation_2 -7.278577261930052e-10 -0.9999903674106034 -0.004389201066989336 3.31864617039563e-07
   hidden rotation_3 0 1 0 0.00380049205061972
-  hidden translation_4 0 0 0
-  hidden rotation_4 0 -1 0 0.0038003973315753697
+  hidden rotation_4 0 -0.9999999999999999 0 0.0038003973315753697
   translation -55.67588224055874 47.250000367102494 0.3169083381872916
   rotation 0.008935872722222389 -2.0786121365361683e-08 0.9999600742923149 3.141589282532849
   controller "<extern>"
   sensorsSlotFront [
     Camera {
-      translation 0 -3 0
+      translation 0 -0.5 0
+      rotation 0 0 1 -0.15
       name "right_camera"
       recognitionColors [
         0 0 0
@@ -620,7 +617,8 @@ BmwX5 {
       name "right_display"
     }
     Camera {
-      translation 0 3 0
+      translation 0 0.5 0
+      rotation 0 0 1 0.15
       name "left_camera"
     }
     Display {
@@ -682,7 +680,7 @@ GenericTrafficLight {
   startGreen FALSE
   greenTime 10
   redTime 10
-  state "orange"
+  state "red"
 }
 CrossRoadsTrafficLight {
   translation 45 -45 0
